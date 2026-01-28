@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rekap Absensi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <button class="btn-back" onclick="history.back()">← Kembali</button>
+  <h2>📊 Rekap Absensi</h2>
+
+  <select id="kelas">
+    <option value="">Pilih Kelas</option>
+    <option value="XI A SMK">XI A SMK</option>
+    <option value="XI B SMK">XI B SMK</option>
+  </select>
+
+  <input type="date" id="tanggal">
+
+  <button onclick="loadRekap()">Tampilkan Rekap</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody id="rekapData"></tbody>
+  </table>
+
+  <div id="summary"></div>
+</div>
+
+<script type="module" src="rekap.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Absensi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <button class="btn-back" onclick="history.back()">← Kembali</button>
+  <h2>📝 Absensi Siswa</h2>
+
+  <!-- PILIH KELAS -->
+  <select id="kelas">
+    <option value="">Pilih Kelas</option>
+    <option value="XI A SMK">XI A SMK</option>
+    <option value="XI B SMK">XI B SMK</option>
+  </select>
+
+  <!-- PILIH TANGGAL -->
+  <input type="date" id="tanggal">
+
+  <button onclick="loadSiswa()">Tampilkan Siswa</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody id="listAbsensi"></tbody>
+  </table>
+</div>
+
+<script type="module" src="absensi.js"></script>
+</body>
+</html>

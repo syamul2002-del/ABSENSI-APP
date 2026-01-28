@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Siswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="siswa-container">
+  <button class="btn-back" onclick="history.back()">← Kembali</button>
+  <h2>📚 Data Siswa</h2>
+
+  <div class="form-siswa">
+    <input id="nama" placeholder="Nama siswa">
+    <input id="kelas" placeholder="Kelas">
+    <button onclick="tambahSiswa()">Tambah</button>
+  </div>
+
+  <div id="info" class="info"></div>
+
+  <table class="table-siswa">
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Kelas</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody id="listSiswa"></tbody>
+  </table>
+</div>
+
+<script type="module" src="siswa.js"></script>
+</body>
+</html>

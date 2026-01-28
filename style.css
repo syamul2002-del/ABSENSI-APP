@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #fff;
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: #4facfe;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3a8dde;
+}
+
+a {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  margin: 8px 0;
+  background: #f1f5ff;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  background: #4facfe;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+/* ======================
+   HALAMAN DATA SISWA
+====================== */
+
+.siswa-container {
+  background: #fff;
+  width: 100%;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+.siswa-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.form-siswa {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form-siswa input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-siswa input:focus {
+  outline: none;
+  border-color: #4facfe;
+}
+
+.form-siswa button {
+  width: 140px;
+  background: #4facfe;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.form-siswa button:hover {
+  background: #3a8dde;
+}
+
+.info {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.table-siswa {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-siswa th {
+  background: #4facfe;
+  color: white;
+  padding: 10px;
+}
+
+.table-siswa td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.table-siswa tr:hover {
+  background: #f1f5ff;
+}
+
+.btn-hapus {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-hapus:hover {
+  background: #dc2626;
+}
+
+.btn-back {
+  width: auto;
+  padding: 8px 16px;
+  background: #f1f5ff;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 15px;
+  transition: all 0.2s ease;
+}
+
+.btn-back:hover {
+  background: #4facfe;
+  color: white;
+}
+#summary {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+#summary p {
+  margin: 5px 0;
+  font-weight: bold;
+}
